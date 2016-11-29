@@ -1,9 +1,14 @@
 import React from 'react'
+import Footer from './Footer'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'
 
-export default React.createClass({
-  render() {
-    return (
-      <h1>React development has begun!</h1>
-    )
-  }
-})
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+)
+
+export default App
